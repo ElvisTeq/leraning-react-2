@@ -7,3 +7,15 @@ Setting Dinamic Inline Styles
 
 ------------------------------------------ {props.children}
 - Will be anything added as "textContent" in the component JSX
+
+____________________________________________________________________________________________________
+#2
+Setting CSS Classes Dynamically
+
+* Implemented in "CourseInput.js"
+
+------------------------------------------ .form-control.invalid input {styles}
+------------------------------------------ .form-control.invalid label {styles}
+- <div className={'form-control invalid'}></div>
+* <label> and <input> insite the "div" will contain all the {styles}
+* by adding "invalid" to => className={'form-control invalid'}
