@@ -36,3 +36,18 @@ Introducing Styled Components
 ------------------------------------------ styled.HTMLElement`CSS.styles`
 - Using "styled" method
 Ex => "Button.js"
+
+____________________________________________________________________________________________________
+#4
+Styled Components & Dynamic props
+
+Implemented in "CourseInput.js"
+
+*Methods
+
+1) <FormControl className={!isValid && "invalid"}>
+- Using "true/false" to add ".invalid" class
+
+2) <FormControl invalid={!isValid}>
+- Using "props" inside the CSS-style values
+Ex => ${props => props.isvalid ? 'red' : 'black'}
