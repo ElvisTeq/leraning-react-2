@@ -1,0 +1,9 @@
+#1
+Setting Dinamic Inline Styles
+
+- Using "useState(true/fasle)"
+* To set "style={{color}}" based on true or false
+* Implemented in => "CourseInput.js"
+
+------------------------------------------ {props.children}
+- Will be anything added as "textContent" in the component JSX
