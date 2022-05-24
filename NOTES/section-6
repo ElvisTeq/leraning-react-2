@@ -75,7 +75,18 @@ Implemented in "Button.js"
 
 2) Import module
 - import anyName from "./AnyName.module.css";
-- anyName => has access to the module css-class-name
+- anyName => has access to the module cssStyle
 
 3) Add to JSX 
-- className={anyName.css-class-name}
+- className={anyName.cssStyle}
+
+____________________________________________________________________________________________________
+#7
+Dynamic Styles with CSS Modules
+
+Implemented => "CourseInput.js"
+- Using Template literal and ${}
+- To dynamically change the "className"
+
+----------------------------------------- className={anyName['form-control']}
+- To write a class name that has a "-" in between
