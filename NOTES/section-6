@@ -61,3 +61,21 @@ Implemented in "Button.js"
 ------------------------------------------- @media (min-width: 500px) { width: auto }
 - To make style changes base on (condition)
 - (If width > 500px) {do changes}
+
+____________________________________________________________________________________________________
+#6
+Using CSS Modules
+
+*Scoping CSS into a Component
+
+Implemented in "Button.js"
+
+1) Rename CSS File (add .module.css)
+- AnyName.module.css
+
+2) Import module
+- import anyName from "./AnyName.module.css";
+- anyName => has access to the module css-class-name
+
+3) Add to JSX 
+- className={anyName.css-class-name}

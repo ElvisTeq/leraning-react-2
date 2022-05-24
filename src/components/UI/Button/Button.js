@@ -1,43 +1,46 @@
-import styled from "styled-components";
+import React from "react";
 
-// Creating a CSS button with "styled" method
-// "style" options are automatically stored as: ."button"
-// "&" === button
-const Button = styled.button`
-  width: 100%;
-  font: inherit;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #8b005d;
-  color: white;
-  background: #8b005d;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
-  cursor: pointer;
+import styles from "./Button.module.css";
 
-  @media (min-width: 768px) {
-    width: auto;
-  }
+// import styled from "styled-components";
 
-  &:focus {
-    outline: none;
-  }
+// // Creating a CSS button with "styled" method
+// // "style" options are automatically stored as: ."button"
+// // "&" === button
+// const Button = styled.button`
+//   width: 100%;
+//   font: inherit;
+//   padding: 0.5rem 1.5rem;
+//   border: 1px solid #8b005d;
+//   color: white;
+//   background: #8b005d;
+//   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+//   cursor: pointer;
 
-  &:hover,
-  &:active {
-    background: #ac0e77;
-    border-color: #ac0e77;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
-  }
-`;
+//   @media (min-width: 768px) {
+//     width: auto;
+//   }
 
-// import "./Button.css";
+//   &:focus {
+//     outline: none;
+//   }
 
-// // {props.onClick} => "textContent" in <Button></Button>
-// const Button = (props) => {
-//   return (
-//     <button type={props.type} className="button" onClick={props.onClick}>
-//       {props.children}
-//     </button>
-//   );
-// };
+//   &:hover,
+//   &:active {
+//     background: #ac0e77;
+//     border-color: #ac0e77;
+//     box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+//   }
+// `;
+
+// {props.children} => "textContent" in <Button></Button>
+// className={styles.button} => ".button" from the impoted module
+const Button = (props) => {
+  return (
+    <button type={props.type} className={styles.button} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
+};
 
 export default Button;
