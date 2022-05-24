@@ -51,3 +51,13 @@ Implemented in "CourseInput.js"
 2) <FormControl invalid={!isValid}>
 - Using "props" inside the CSS-style values
 Ex => ${props => props.isvalid ? 'red' : 'black'}
+
+____________________________________________________________________________________________________
+#5
+Styled Components & Media Queries
+
+Implemented in "Button.js"
+
+------------------------------------------- @media (min-width: 500px) { width: auto }
+- To make style changes base on (condition)
+- (If width > 500px) {do changes}
