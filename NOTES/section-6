@@ -19,3 +19,20 @@ Setting CSS Classes Dynamically
 - <div className={'form-control invalid'}></div>
 * <label> and <input> insite the "div" will contain all the {styles}
 * by adding "invalid" to => className={'form-control invalid'}
+
+____________________________________________________________________________________________________
+#3
+Introducing Styled Components
+
+* Implemented in "Button.js"
+
+* styled-components.com
+- Package to build CSS.styles that can only be used on its attached components
+
+------------------------------------------ npm i --save styled-components
+
+------------------------------------------ import styled from 'styled-components'
+
+------------------------------------------ styled.HTMLElement`CSS.styles`
+- Using "styled" method
+Ex => "Button.js"
